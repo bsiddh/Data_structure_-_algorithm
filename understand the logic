@@ -5,7 +5,7 @@ value =4
 next ={
           value = 6
           next =  {
-                   value = 10
+                tail ==>   value = 10
                    next =null
           }
 }
