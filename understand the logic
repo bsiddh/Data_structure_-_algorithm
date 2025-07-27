@@ -1,0 +1,12 @@
+//working of node or have values and address will be stored
+
+{
+value =4
+next ={
+          value = 6
+          next =  {
+                   value = 10
+                   next =null
+          }
+}
+}
