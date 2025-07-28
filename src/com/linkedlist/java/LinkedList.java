@@ -1,6 +1,7 @@
 package com.linkedlist.java;
 
-public class LinkedList {
+public class LinkedList
+{
 
     private Node head;
     private Node tail;
@@ -14,7 +15,8 @@ public class LinkedList {
     }
 
 //inner class
-    class Node {
+    class Node
+{
         int value;
         Node next;//it is pointer to the node.
 
@@ -58,5 +60,31 @@ public class LinkedList {
         }
         length++;
         }
+
+        //remove node
+         public Node removeLast()
+         {
+        if (length == 0)
+            return null;
+
+         Node temp = head;
+         Node pre = head;
+
+         while (temp.next!=null)
+         {
+             pre = temp;
+             temp = temp.next;
+         }
+         tail = pre;
+         tail.next = null;
+         length--;
+         if(length==0){
+             head = null;
+             tail = null;
+         }
+
+          return temp;
+
+    }
 
 }
